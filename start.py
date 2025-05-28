@@ -1,4 +1,4 @@
-from core.main import ejecutar_bot as main
+from main import ejecutar_bot
 
 if __name__ == "__main__":
-    main()
+    ejecutar_bot()
