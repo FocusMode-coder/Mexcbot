@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: lucianoai-signals
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python3 core/main.py"
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: "7816703837:AAGBFm5rTW4H9n-VJ6rbSi3t2-WebsWc_Xo"
+      - key: TELEGRAM_CHAT_ID
+        value: "7613460488"
+      - key: MEXC_API_KEY
+        value: "mx0vglkIg3tLCl4h2A"
+      - key: MEXC_SECRET_KEY
+        value: "fa88e2a7139542b3824139d971bd6100"
+    autoDeploy: true
