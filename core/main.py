@@ -1,10 +1,10 @@
-from ..strategy.analyzer import analizar_mercado
-from ..telegram.messenger import enviar_mensaje_telegram
-from .logger import log_signal
+from strategy import analyzer
+from telegram.messenger import enviar_mensaje_telegram
+from logs.logger import log_signal
 
 def main():
     try:
-        señal = analizar_mercado()
+        señal = analyzer.analizar_mercado()
 
         if señal:
             mensaje = (

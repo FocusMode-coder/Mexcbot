@@ -3,7 +3,7 @@ services:
     name: lucianoai-signals
     runtime: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "python3 core/main.py"
+    startCommand: "python3 start.py"
     envVars:
       - key: TELEGRAM_TOKEN
         value: "7816703837:AAGBFm5rTW4H9n-VJ6rbSi3t2-WebsWc_Xo"
